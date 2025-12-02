@@ -2,7 +2,7 @@
 # Makefile for lab 1-4.
 
 # Change the last dependency for each new lab
-all: tags headers lab3
+all: headers lab3
 
 # Rule to compile lab3
 lab3: lab3.o commands.o utility.o 
@@ -30,8 +30,8 @@ tags: *.c
 	ctags -R .
 
 # Rule to generate headers
-headers: *.c tags
-	headers.sh
+headers: *.c
+	./headers.sh
 
 # Rule to compile .c files into .o files
 %.o: %.c *.h

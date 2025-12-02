@@ -1,0 +1,10 @@
+*.o
+*.dSYM/
+lab3
+commands
+utility
+tags
+*.zip
+install/
+*.dat
+headers
